@@ -1,3 +1,12 @@
+'''
+
+Hacker News
+https://news.ycombinator.com/newest
+API
+https://github.com/HackerNews/API
+
+'''
+
 import time
 
 import requests
@@ -9,7 +18,7 @@ def show_news():
 
     i = 0
 
-    for i in range(0, 6):
+    for i in range(0, 11):
         num = result[i]
         time.sleep(1)
         response_latest = requests.get(f'https://hacker-news.firebaseio.com/v0/item/{num}.json?print=pretty')
