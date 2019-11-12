@@ -11,6 +11,7 @@ import time
 
 import requests
 
+print('\nThe latest 10 articles of Hacker News\n')
 
 def show_news():
     response = requests.get('https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty')
